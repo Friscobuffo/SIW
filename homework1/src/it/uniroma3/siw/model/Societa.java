@@ -16,11 +16,7 @@ public class Societa {
 	@Column(length = 2000)
 	private String ragioneSociale;
 	
-	private String indirizzoVIa;
-	private Integer numeroCivico;
-	private Integer cap;
-	private String provincia;
-	private String comune;
+	private Indirizzo indirizzo;
 	
 	private String numeroTelefono;
 
@@ -40,46 +36,14 @@ public class Societa {
 		this.ragioneSociale = ragioneSociale;
 	}
 
-	public String getIndirizzoVIa() {
-		return indirizzoVIa;
+	public Indirizzo getIndirizzo() {
+		return indirizzo;
 	}
-
-	public void setIndirizzoVIa(String indirizzoVIa) {
-		this.indirizzoVIa = indirizzoVIa;
+	
+	public void setIndirizzo(Indirizzo indirizzo) {
+		this.indirizzo = indirizzo;
 	}
-
-	public Integer getNumeroCivico() {
-		return numeroCivico;
-	}
-
-	public void setNumeroCivico(Integer numeroCivico) {
-		this.numeroCivico = numeroCivico;
-	}
-
-	public Integer getCap() {
-		return cap;
-	}
-
-	public void setCap(Integer cap) {
-		this.cap = cap;
-	}
-
-	public String getProvincia() {
-		return provincia;
-	}
-
-	public void setProvincia(String provincia) {
-		this.provincia = provincia;
-	}
-
-	public String getComune() {
-		return comune;
-	}
-
-	public void setComune(String comune) {
-		this.comune = comune;
-	}
-
+	
 	public String getNumeroTelefono() {
 		return numeroTelefono;
 	}
