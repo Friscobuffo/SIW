@@ -31,6 +31,17 @@ public class Docente {
 	@OneToMany(mappedBy = "docente", cascade = {CascadeType.REMOVE}, fetch = FetchType.EAGER)
 	private List<Corso> corsi;
 
+	public Docente() {}
+	
+	public Docente(String nome, String cognome, String luogoDiNascita, LocalDate dataDiNascita,
+			String numeroPartitaIva) {
+		this.nome = nome;
+		this.cognome = cognome;
+		this.luogoDiNascita = luogoDiNascita;
+		this.dataDiNascita = dataDiNascita;
+		this.numeroPartitaIva = numeroPartitaIva;
+	}
+
 	public Long getId() {
 		return id;
 	}

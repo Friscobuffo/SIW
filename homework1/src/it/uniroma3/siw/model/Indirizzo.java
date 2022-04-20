@@ -18,6 +18,16 @@ public class Indirizzo {
 	private String provincia;
 	private String comune;
 	
+	public Indirizzo() {}
+	
+	public Indirizzo(String via, Integer numeroCivico, String cap, String provincia, String comune) {
+		this.via = via;
+		this.numeroCivico = numeroCivico;
+		this.cap = cap;
+		this.provincia = provincia;
+		this.comune = comune;
+	}
+	
 	public Long getId() {
 		return id;
 	}

@@ -5,6 +5,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.OneToOne;
 
 @Entity
 public class Societa {
@@ -16,10 +17,19 @@ public class Societa {
 	@Column(length = 2000)
 	private String ragioneSociale;
 	
+	@OneToOne
 	private Indirizzo indirizzo;
 	
 	private String numeroTelefono;
 
+	public Societa() {}
+	
+	public Societa(String ragioneSociale, Indirizzo indirizzo, String numeroTelefono) {
+		this.ragioneSociale = ragioneSociale;
+		this.indirizzo = indirizzo;
+		this.numeroTelefono = numeroTelefono;
+	}
+	
 	public Long getId() {
 		return id;
 	}

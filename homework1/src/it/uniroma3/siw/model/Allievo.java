@@ -41,6 +41,18 @@ public class Allievo {
 	@Column(nullable = false)
 	private List<Corso> corsi;
 
+	public Allievo () {}
+	
+	public Allievo(Long numeroMatricola, String nome, String cognome, String email, LocalDate dataDiNascita,
+			String luogoDiNascita) {
+		this.numeroMatricola = numeroMatricola;
+		this.nome = nome;
+		this.cognome = cognome;
+		this.email = email;
+		this.dataDiNascita = dataDiNascita;
+		this.luogoDiNascita = luogoDiNascita;
+	}
+	
 	public Long getId() {
 		return id;
 	}

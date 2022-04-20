@@ -28,6 +28,14 @@ public class Corso {
 	@ManyToMany(mappedBy = "corsi")
 	private List<Allievo> allievi;
 
+	public Corso() {}
+	
+	public Corso(LocalDate dataInizio, Integer durataMesi, Docente docente) {
+		this.dataInizio = dataInizio;
+		this.durataMesi = durataMesi;
+		this.docente = docente;
+	}
+	
 	public Long getId() {
 		return id;
 	}
