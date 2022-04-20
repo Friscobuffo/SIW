@@ -16,18 +16,12 @@ public class Societa {
 	@Column(length = 2000)
 	private String ragioneSociale;
 	
-	@Column(nullable = false)
 	private String indirizzoVIa;
-	@Column(nullable = false)
 	private Integer numeroCivico;
-	@Column(nullable = false)
 	private Integer cap;
-	@Column(nullable = false)
 	private String provincia;
-	@Column(nullable = false)
 	private String comune;
 	
-	@Column(nullable = false)
 	private String numeroTelefono;
 
 	public Long getId() {

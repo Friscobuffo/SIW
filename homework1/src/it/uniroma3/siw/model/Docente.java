@@ -4,7 +4,6 @@ import java.time.LocalDate;
 import java.util.List;
 
 import javax.persistence.CascadeType;
-import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
@@ -19,17 +18,12 @@ public class Docente {
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Long id;
 	
-	@Column(nullable = false)
 	private String nome;
-	@Column(nullable = false)
 	private String cognome;
 	
-	@Column(nullable = false)
 	private String luogoDiNascita;
-	@Column(nullable = false)
 	private LocalDate dataDiNascita;
 	
-	@Column(nullable = false)
 	private String numeroPartitaIva;
 	
 	//cascade: la rimozione del professore comporta la rimozione anche dei suoi corsi
