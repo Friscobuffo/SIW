@@ -28,5 +28,69 @@ public class Societa {
 	private String comune;
 	
 	@Column(nullable = false)
-	private String numeroTelefono;	
+	private String numeroTelefono;
+
+	public Long getId() {
+		return id;
+	}
+
+	public void setId(Long id) {
+		this.id = id;
+	}
+
+	public String getRagioneSociale() {
+		return ragioneSociale;
+	}
+
+	public void setRagioneSociale(String ragioneSociale) {
+		this.ragioneSociale = ragioneSociale;
+	}
+
+	public String getIndirizzoVIa() {
+		return indirizzoVIa;
+	}
+
+	public void setIndirizzoVIa(String indirizzoVIa) {
+		this.indirizzoVIa = indirizzoVIa;
+	}
+
+	public Integer getNumeroCivico() {
+		return numeroCivico;
+	}
+
+	public void setNumeroCivico(Integer numeroCivico) {
+		this.numeroCivico = numeroCivico;
+	}
+
+	public Integer getCap() {
+		return cap;
+	}
+
+	public void setCap(Integer cap) {
+		this.cap = cap;
+	}
+
+	public String getProvincia() {
+		return provincia;
+	}
+
+	public void setProvincia(String provincia) {
+		this.provincia = provincia;
+	}
+
+	public String getComune() {
+		return comune;
+	}
+
+	public void setComune(String comune) {
+		this.comune = comune;
+	}
+
+	public String getNumeroTelefono() {
+		return numeroTelefono;
+	}
+
+	public void setNumeroTelefono(String numeroTelefono) {
+		this.numeroTelefono = numeroTelefono;
+	}	
 }
