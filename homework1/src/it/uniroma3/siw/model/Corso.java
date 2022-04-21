@@ -39,39 +39,30 @@ public class Corso {
 	public Long getId() {
 		return id;
 	}
-
 	public void setId(Long id) {
 		this.id = id;
 	}
-
 	public LocalDate getDataInizio() {
 		return dataInizio;
 	}
-
 	public void setDataInizio(LocalDate dataInizio) {
 		this.dataInizio = dataInizio;
 	}
-
 	public Integer getDurataMesi() {
 		return durataMesi;
 	}
-
 	public void setDurataMesi(Integer durataMesi) {
 		this.durataMesi = durataMesi;
 	}
-
 	public Docente getDocente() {
 		return docente;
 	}
-
 	public void setDocente(Docente docente) {
 		this.docente = docente;
 	}
-
 	public List<Allievo> getAllievi() {
 		return allievi;
 	}
-
 	public void setAllievi(List<Allievo> allievi) {
 		this.allievi = allievi;
 	}

@@ -56,71 +56,54 @@ public class Allievo {
 	public Long getId() {
 		return id;
 	}
-
 	public void setId(Long id) {
 		this.id = id;
 	}
-
 	public Long getNumeroMatricola() {
 		return numeroMatricola;
 	}
-
 	public void setNumeroMatricola(Long numeroMatricola) {
 		this.numeroMatricola = numeroMatricola;
 	}
-
 	public String getNome() {
 		return nome;
 	}
-
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
-
 	public String getCognome() {
 		return cognome;
 	}
-	
 	public String getEmail() {
 		return email;
 	}
-
 	public void setEmail(String email) {
 		this.email = email;
 	}
-	
 	public void setCognome(String cognome) {
 		this.cognome = cognome;
 	}
-
 	public LocalDate getDataDiNascita() {
 		return dataDiNascita;
 	}
-
 	public void setDataDiNascita(LocalDate dataDiNascita) {
 		this.dataDiNascita = dataDiNascita;
 	}
-
 	public String getLuogoDiNascita() {
 		return luogoDiNascita;
 	}
-
 	public void setLuogoDiNascita(String luogoDiNascita) {
 		this.luogoDiNascita = luogoDiNascita;
 	}
-
 	public Societa getSocietaDiConsulenza() {
 		return societaDiConsulenza;
 	}
-
 	public void setSocietaDiConsulenza(Societa societaDiConsulenza) {
 		this.societaDiConsulenza = societaDiConsulenza;
 	}
-
 	public List<Corso> getCorsi() {
 		return corsi;
 	}
-
 	public void setCorsi(List<Corso> corsi) {
 		this.corsi = corsi;
 	}

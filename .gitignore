@@ -12,6 +12,9 @@ local.properties
 .loadpath
 .recommenders
 
+# Hibernate
+META-INF/
+
 # External tool builders
 .externalToolBuilders/
 

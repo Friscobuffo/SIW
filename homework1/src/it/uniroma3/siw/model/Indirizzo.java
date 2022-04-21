@@ -13,14 +13,14 @@ public class Indirizzo {
 	private Long id;
 	
 	private String via;
-	private Integer numeroCivico;
+	private String numeroCivico;
 	private String cap;
 	private String provincia;
 	private String comune;
 	
 	public Indirizzo() {}
 	
-	public Indirizzo(String via, Integer numeroCivico, String cap, String provincia, String comune) {
+	public Indirizzo(String via, String numeroCivico, String cap, String provincia, String comune) {
 		this.via = via;
 		this.numeroCivico = numeroCivico;
 		this.cap = cap;
@@ -40,10 +40,10 @@ public class Indirizzo {
 	public void setVia(String via) {
 		this.via = via;
 	}
-	public Integer getNumeroCivico() {
+	public String getNumeroCivico() {
 		return numeroCivico;
 	}
-	public void setNumeroCivico(Integer numeroCivico) {
+	public void setNumeroCivico(String numeroCivico) {
 		this.numeroCivico = numeroCivico;
 	}
 	public String getCap() {
