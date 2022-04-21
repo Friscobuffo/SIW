@@ -32,8 +32,7 @@ public class Allievo {
 	private LocalDate dataDiNascita;
 	private String luogoDiNascita;
 	
-	@OneToOne(cascade = {CascadeType.PERSIST})
-	@Column(nullable = false)
+	@OneToOne(cascade = {CascadeType.PERSIST}, optional = false)
 	private Societa societaDiConsulenza;
 	
 	//fetch; è utile conoscere subito tutti i corsi alla quale si è iscritti

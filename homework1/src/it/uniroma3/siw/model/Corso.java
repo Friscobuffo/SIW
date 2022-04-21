@@ -21,8 +21,7 @@ public class Corso {
 	private LocalDate dataInizio;
 	private Integer durataMesi;
 	
-	@ManyToOne
-	@Column(nullable = false)
+	@ManyToOne(optional = false)
 	private Docente docente;
 	
 	@ManyToMany(mappedBy = "corsi")

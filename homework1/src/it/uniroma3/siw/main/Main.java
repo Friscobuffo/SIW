@@ -7,7 +7,7 @@ import javax.persistence.Persistence;
 public class Main {
 
 	public static void main(String[] args) {
-		EntityManagerFactory emf = Persistence.createEntityManagerFactory("university-unit");
+		EntityManagerFactory emf = Persistence.createEntityManagerFactory("corsi-unit");
 		EntityManager em = emf.createEntityManager();
 		em.close();
 		emf.close();

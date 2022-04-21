@@ -28,7 +28,7 @@ public class Docente {
 	
 	//cascade: la rimozione del professore comporta la rimozione anche dei suoi corsi
 	//fetch: è utile conoscere subito tutti i corsi sostenuti dal professore
-	@OneToMany(mappedBy = "docente", cascade = {CascadeType.REMOVE}, fetch = FetchType.EAGER)
+	@OneToMany(mappedBy = "docente", cascade = {CascadeType.REMOVE, CascadeType.PERSIST}, fetch = FetchType.EAGER)
 	private List<Corso> corsi;
 
 	public Docente() {}
