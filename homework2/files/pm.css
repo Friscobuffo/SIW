@@ -47,7 +47,8 @@ body {
 	border-color:navy;
 	}
 #image{
-	width: 25%;
+	max-width: 25%;
+	height: auto;
 }
 #about-blocks{
 	display: flex;
@@ -109,8 +110,8 @@ body {
 @media (max-width: 1000px){
 	#infos{
 		margin-top: 1%;
-		margin-left: 10%;
-		margin-right: 20%;
+		margin-left: 17%;
+		margin-right: 25%;
 	}
 	#curriculum{
 		margin-top: 5%;
@@ -119,7 +120,7 @@ body {
 		border-color: navy;
 	}
 	.mobile{
-		margin-left: -10%;
+		margin-left: -5%;
 	}
 	.blocco{
 		padding-left: 1%;
@@ -151,7 +152,9 @@ body {
 	}
 	#image{
 		margin-left: 15%;
-		width: 50%;
+		margin-right: 15%;
+		max-width: 50%;
+		height:  auto;
 	}
 	.home{
 		margin-left: 0.5%;
