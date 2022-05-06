@@ -5,7 +5,7 @@
 	<title>Prima Webapp</title>
 </head>
 <body>
-	<form action="conferma" method="post">
+	<form action="index" method="post">
 		<div>Nome: <input type="text" name="nome" value="${persona.nome}"/></div>
 		<div>Cognome: <input type="text" name="cognome" value="${persona.cognome}"/></div>
 		<div><input type="submit" 
