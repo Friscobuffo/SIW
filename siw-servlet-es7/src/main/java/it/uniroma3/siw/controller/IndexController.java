@@ -14,7 +14,7 @@ import javax.servlet.http.HttpSession;
 import it.uniroma3.siw.controller.validator.PersonaValidator;
 import it.uniroma3.siw.model.Persona;
 
-@WebServlet("/conferma")
+@WebServlet("/index")
 public class IndexController extends HttpServlet{
 	private static final long serialVersionUID = 1L;
 
