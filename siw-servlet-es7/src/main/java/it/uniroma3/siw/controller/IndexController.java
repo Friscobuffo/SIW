@@ -25,7 +25,7 @@ public class IndexController extends HttpServlet{
 
 		String nome = request.getParameter("nome");
 		String cognome = request.getParameter("cognome");
-		String nextPage;
+		String nextPage = "/conferma.jsp";
 		
 		Persona persona = new Persona();
 		persona.setNome(nome);
@@ -33,12 +33,8 @@ public class IndexController extends HttpServlet{
 		
 		session.setAttribute("persona", persona);
 		
-		if (new PersonaValidator().valid(request)) {
-			nextPage = "/conferma.jsp";
-		}
-		else {
-			request.setAttribute("persona", persona);
-			nextPage = "/index.jsp";
+		if (!(new PersonaValidator().valid(request))) {
+			nextPage = "/index.jsp"; 
 		}
 		
 		// inoltro

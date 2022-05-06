@@ -4,21 +4,24 @@ import java.util.HashMap;
 import java.util.Map;
 
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
+
+import it.uniroma3.siw.model.Persona;
 
 public class PersonaValidator {
 
 	public boolean valid(HttpServletRequest request) {
 		
 		boolean isValid = true;
-		String nome = request.getParameter("nome");
-		String cognome = request.getParameter("cognome");
+		HttpSession session = request.getSession();
+		Persona persona = (Persona) session.getAttribute("persona");
 		
 		Map<String, String> messaggiErrore = new HashMap<>();
-		if (nome.isBlank()) {
+		if (persona.getNome().isBlank()) {
 			messaggiErrore.put("nome", "inserire un nome");
 			isValid = false;
 		}
-		if (cognome.isBlank()) {
+		if (persona.getCognome().isBlank()) {
 			messaggiErrore.put("cognome", "inserire un cognome");
 			isValid = false;
 		}

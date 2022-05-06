@@ -16,17 +16,13 @@ public class ConfermaController extends HttpServlet {
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) 
 			throws ServletException, IOException {
-		String nextPage;
+		String nextPage = "/index.jsp";
 
 		String conferma = request.getParameter("conferma");
 		if (conferma!=null) {
 			nextPage = "/persona.jsp";
 		}
-		else {
-			nextPage = "/index.jsp";
-		}
 
-		// inoltro
 		ServletContext application  = getServletContext();
 		RequestDispatcher rd = application.getRequestDispatcher(nextPage);
 		rd.forward(request, response);
